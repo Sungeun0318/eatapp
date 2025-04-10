@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <!-- 메인 화면 콘텐츠 -->
     <TextView
         android:id="@+id/tvMain"
         android:layout_width="wrap_content"
@@ -13,12 +13,11 @@
         android:textSize="20sp"
         android:layout_centerInParent="true" />
 
-    <!-- 하단 바 포함 -->
+    <!-- 하단 바 포함: id 지정 없이 사용 -->
     <include
-        android:id="@+id/include_bottom_nav"
         layout="@layout/bottom_nav_bar"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

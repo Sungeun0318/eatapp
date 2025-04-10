@@ -8,10 +8,10 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 필요하다면 layout/activity_settings.xml 생성
         setContentView(R.layout.activity_settings);
 
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
-        com.example.eatapp.BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
+        BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
     }
 }
+

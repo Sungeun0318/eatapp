@@ -11,6 +11,7 @@ public class RandomMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_random_menu);
 
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
-        com.example.eatapp.BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
+        BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
+
     }
 }

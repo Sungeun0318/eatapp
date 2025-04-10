@@ -8,10 +8,11 @@ public class FavoritesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 필요하다면 layout/activity_favorites.xml 생성
         setContentView(R.layout.activity_favorites);
 
+        // 이제 null이 아닙니다.
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
-        com.example.eatapp.BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
+        BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
     }
 }
+

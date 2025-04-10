@@ -10,7 +10,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 하단 바를 찾습니다.
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
-        com.example.eatapp.BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
+        // 이제 null이 아니어야 합니다.
+        BottomNavigationHandle.setupBottomNavigation(this, bottomNav);
     }
 }
